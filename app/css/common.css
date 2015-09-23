@@ -1,63 +1,96 @@
+/* ooocss */
+.offset-left1 {
+    margin-left: 255px
+}
+.offset-left2 {
+    margin-left: 510px
+}
+.offset-left3 {
+    margin-left: 765px
+}
+/* 暫定対応 */
+.skill-panel.offset-right1 {
+    margin-right: 255px
+}
+.skill-panel.offset-right2 {
+    margin-right: 510px
+}
+.skill-panel.offset-right3 {
+    margin-right: 765px
+}
+.img100 {
+    width: 100%;
+}
+.icon2em{
+    width: 2em;
+}
+.icon-wrapper32 {
+     width: 32px;
+     height: 32px;
+}
+.alert-color {
+    color: #DE0029;
+}
+.bolld {
+    font-weight: bold;
+}
+
+
+
 /* custom template */
-#skill01 #sidebar .skill01 a,
-#skill02 #sidebar .skill02 a,
-#skill03 #sidebar .skill03 a,
-#skill04 #sidebar .skill04 a,
-#skill05 #sidebar .skill05 a{
-    opacity: 0.8;
-    background-color: #fff;
-    color: #010101;
+.first_skill .panel-default{
+    background-color: #DFF0D8;
 }
-
-.width1040 {
-    width: 1040px;
+.second_skill .panel-default{
+    background-color: #FCF8E3;
 }
-
+.third_skill .panel-default{
+    background-color: #D9EDF7;
+}
+.navbar-black ul {
+    margin: 5px 0;
+}
+.skill_point_info .sp_num{
+    display: inline-block;
+    width: 2em;
+    text-align: center;
+}
+.skill_point_info .btn {
+    padding: 0 12px;
+}
 .content-block {
+    width: 1040px;
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     margin-bottom: 20px;
     border-color: #ddd;
-    padding: 15px;
+/*右余白なし*/
+    padding: 15px 0 15px 15px;
     overflow: auto;
 }
-
 .skill-img {
     width: 50px;
     height: 50px;
     display: block;
 }
-
 .skill-panel {
     height: 85px;
     padding: 5px;
     text-align: left;
     vertical-align: top;
-    width: 190px;
+    width: 240px;
     float: left;
-    margin-right: 10px;
+/*右余白なし をここで使う*/
+    margin-right: 15px;
 }
-
-
 .skill-name {
     margin-bottom: 4px;
     margin-top: 2px;
 }
 .skill-icon {
     float: left;
-}
-.icon-wrapper32 {
-    width: 32px;
-    height: 32px;
-}
-
-.img100 {
-    width: 100%;
-}
-.icon2em{
-    width: 2em;
 }
 
 .skill-level {
@@ -68,10 +101,21 @@
     width: 130px;
     padding: 25px 12px 0;
 }
+.skill-controller {
+    float: left;
+    width: 60px;
+}
+.skill-controller .btn{
+    padding: 0px 4px;
+}
+.skill-controller .btn.sp-max {
+    padding: 0px 20px;
+}
 
 .job-block {
     display: inline-block;
     width: 100%;
+    clear: both;
 }
 
 /* bootstrap overrides */
@@ -89,6 +133,49 @@
 }
 #xs-menu {
     text-align: center;
+}
+.btn:focus{
+    outline: 0;
+}
+
+
+/* side nav settings */
+#job1_1_1 #sidebar .job1_1_1 a,
+#job1_1_2 #sidebar .job1_1_2 a,
+#job1_2_1 #sidebar .job1_2_1 a,
+#job1_2_2 #sidebar .job1_2_2 a,
+#job2_1_1 #sidebar .job2_1_1 a,
+#job2_1_2 #sidebar .job2_1_2 a,
+#job2_2_1 #sidebar .job2_2_1 a,
+#job2_2_2 #sidebar .job2_2_2 a,
+#job3_1_1 #sidebar .job3_1_1 a,
+#job3_1_2 #sidebar .job3_1_2 a,
+#job3_2_1 #sidebar .job3_2_1 a,
+#job3_2_2 #sidebar .job3_2_2 a,
+#job4_1_1 #sidebar .job4_1_1 a,
+#job4_1_2 #sidebar .job4_1_2 a,
+#job4_2_1 #sidebar .job4_2_1 a,
+#job4_2_2 #sidebar .job4_2_2 a,
+#job5_1_1 #sidebar .job5_1_1 a,
+#job5_1_2 #sidebar .job5_1_2 a,
+#job5_2_1 #sidebar .job5_2_1 a,
+#job5_2_2 #sidebar .job5_2_2 a,
+#job6_1_1 #sidebar .job6_1_1 a,
+#job6_1_2 #sidebar .job6_1_2 a,
+#job6_2_1 #sidebar .job6_2_1 a,
+#job6_2_2 #sidebar .job6_2_2 a,
+#job7_1_1 #sidebar .job7_1_1 a,
+#job7_1_2 #sidebar .job7_1_2 a,
+#job7_2_1 #sidebar .job7_2_1 a,
+#job7_2_2 #sidebar .job7_2_2 a,
+#job8_1_1 #sidebar .job8_1_1 a,
+#job8_1_2 #sidebar .job8_1_2 a,
+#job9_1_1 #sidebar .job9_1_1 a,
+#job9_1_2 #sidebar .job9_1_2 a,
+#job1_3_1 #sidebar .job1_3_1 a{
+    opacity: 0.8;
+    background-color: #fff;
+    color: #010101;
 }
 
 /* jquery slider overrides */
@@ -134,7 +221,7 @@
 
 .flat-slider.ui-slider.ui-slider-horizontal .ui-slider-pip .ui-slider-line {
     width: 2px;
-    height: 5px;
+    height: 10px;
     margin-left: -1px;
 }
 
